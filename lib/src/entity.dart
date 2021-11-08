@@ -167,6 +167,9 @@ class AssetPathEntity {
 
 /// Used to describe a picture or video
 class AssetEntity {
+  bool isChoosed;
+  var bytes;
+
   /// see [id]
   AssetEntity({
     required this.id,
@@ -176,7 +179,9 @@ class AssetEntity {
     this.duration = 0,
     this.orientation = 0,
     this.isFavorite = false,
+    this.isChoosed = false,
     this.title,
+    this.bytes,
     this.createDtSecond,
     this.modifiedDateSecond,
     this.relativePath,
